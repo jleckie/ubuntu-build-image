@@ -4,8 +4,12 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN \
   apt-get update && \
+  apt-get install -y language-pack-en-base && \
+  export LC_ALL=en_US.UTF-8 && \
+  export LANG=en_US.UTF-8 && \
   apt-get install -y python-software-properties software-properties-common && \
   add-apt-repository ppa:ondrej/php5 && \
+  apt-get remove -y python-software-properties software-properties-common && \
   apt-get update && \
   apt-get install -y \
     php5 \
@@ -23,4 +27,5 @@ RUN \
     php-pear \
     php5-redis \
     php5-json && \
+  apt-get autoremove -y && \
   rm -rf /var/lib/apt/lists/*
