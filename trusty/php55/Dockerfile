@@ -26,6 +26,7 @@ RUN \
     php5-imap \
     php-pear \
     php5-redis \
-    php5-json && \
+    php5-json \
+    git && \
   apt-get autoremove -y && \
   rm -rf /var/lib/apt/lists/*
