@@ -9,6 +9,7 @@ RUN \
   export LANG=en_US.UTF-8 && \
   apt-get install -y python-software-properties software-properties-common && \
   add-apt-repository ppa:ondrej/php5 && \
+  add-apt-repository ppa:chris-lea/node.js && \
   apt-get remove -y python-software-properties software-properties-common && \
   apt-get update && \
   apt-get install -y \
@@ -27,6 +28,8 @@ RUN \
     php-pear \
     php5-redis \
     php5-json \
-    git && \
+    git \
+    nodejs \
+    && \
   apt-get autoremove -y && \
   rm -rf /var/lib/apt/lists/*
