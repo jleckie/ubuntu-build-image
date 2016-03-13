@@ -1,8 +1,10 @@
 FROM ubuntu:trusty
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN \
   apt-get update && \
-  apt-get install -y python-software-properties && \
+  apt-get install -y python-software-properties software-properties-common && \
   add-apt-repository ppa:ondrej/php5 && \
   apt-get update && \
   apt-get install -y \
