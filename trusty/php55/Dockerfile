@@ -30,6 +30,7 @@ RUN \
     php5-json \
     git \
     nodejs \
+    ruby \
     && \
   apt-get autoremove -y && \
   rm -rf /var/lib/apt/lists/*
