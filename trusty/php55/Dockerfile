@@ -31,6 +31,10 @@ RUN \
     git \
     nodejs \
     ruby \
+    packaging-dev \
+    dh-make \
+    git-buildpackage \
+    reprepro \
     && \
   apt-get autoremove -y && \
   rm -rf /var/lib/apt/lists/*
