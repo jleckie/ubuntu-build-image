@@ -28,6 +28,7 @@ RUN \
     php-pear \
     php5-redis \
     php5-json \
+    php5-mcrypt \
     git \
     nodejs \
     ruby \
