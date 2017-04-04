@@ -7,7 +7,7 @@ RUN \
   apt-get install -y language-pack-en-base && \
   export LC_ALL=en_US.UTF-8 && \
   export LANG=en_US.UTF-8 && \
-  apt-get install -y python-software-properties software-properties-common && \
+  apt-get install -y python-software-properties software-properties-common curl && \
   curl -sL https://deb.nodesource.com/setup_7.x | bash - && \
   add-apt-repository ppa:ondrej/php && \
   apt-get update && \
