@@ -10,11 +10,11 @@ RUN \
   apt-get install -y python-software-properties software-properties-common curl && \
   curl -sL https://deb.nodesource.com/setup_7.x | bash - && \
   add-apt-repository ppa:ondrej/php && \
-  apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db && \
+  apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8 && \
   echo "deb http://mirror.aarnet.edu.au/pub/MariaDB/repo/10.1/ubuntu xenial main" >> /etc/apt/sources.list.d/mariadb101.list && \
   echo "deb-src http://mirror.aarnet.edu.au/pub/MariaDB/repo/10.1/ubuntu xenial main" >> /etc/apt/sources.list.d/mariadb101.list && \
   apt-get update && \
-  apt-get install -y --allow-unauthenticated \
+  apt-get install -y \
     php7.1 \
     php7.1-cli \
     php7.1-dev \
