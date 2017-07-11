@@ -14,7 +14,7 @@ RUN \
   echo "deb http://mirror.aarnet.edu.au/pub/MariaDB/repo/10.1/ubuntu xenial main" >> /etc/apt/sources.list.d/mariadb101.list && \
   echo "deb-src http://mirror.aarnet.edu.au/pub/MariaDB/repo/10.1/ubuntu xenial main" >> /etc/apt/sources.list.d/mariadb101.list && \
   apt-get update && \
-  apt-get install -y \
+  apt-get install -y --allow-unauthenticated \
     php7.1 \
     php7.1-cli \
     php7.1-dev \
