@@ -37,7 +37,6 @@ RUN \
     php7.1-xml \
     php7.1-zip \
     php7.1-mysql \
-    php-apcu \
     php-imagick \
     php-redis \
     php7.1-sybase \
