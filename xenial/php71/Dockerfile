@@ -9,6 +9,7 @@ RUN \
   export LANG=en_US.UTF-8 && \
   apt-get install -y python-software-properties software-properties-common curl && \
   curl -sL https://deb.nodesource.com/setup_7.x | bash - && \
+  curl -sL https://sentry.io/get-cli/ | bash && \
   add-apt-repository ppa:ondrej/php && \
   apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8 && \
   echo "deb http://mirror.aarnet.edu.au/pub/MariaDB/repo/10.1/ubuntu xenial main" >> /etc/apt/sources.list.d/mariadb101.list && \
