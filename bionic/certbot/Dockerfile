@@ -21,6 +21,5 @@ RUN \
     certbot-dns-nsone \
     certbot-dns-rfc2136 \
     certbot-dns-route53 && \
-  apt-get remove -y python-software-properties software-properties-common && \
   apt-get autoremove -y && \
   rm -rf /var/lib/apt/lists/*
