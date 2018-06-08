@@ -11,6 +11,7 @@ RUN \
   apt-get install -y python3-pip && \
   pip3 install \
     certbot \
+    cryptography==2.2.1 \
     certbot-dns-cloudflare \
     certbot-dns-cloudxns \
     certbot-dns-digitalocean \
