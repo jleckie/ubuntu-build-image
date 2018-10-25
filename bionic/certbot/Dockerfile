@@ -9,6 +9,7 @@ RUN \
   export LANG=en_US.UTF-8 && \
   apt-get install -y software-properties-common curl && \
   apt-get install -y python3-pip && \
+  apt-get install -y openjdk-8-jre-headless && \
   pip3 install \
     certbot \
     cryptography==2.2.1 \
