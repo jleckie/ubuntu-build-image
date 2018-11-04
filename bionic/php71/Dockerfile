@@ -39,11 +39,8 @@ RUN \
     php7.1-mysql \
     php-imagick \
     php-redis \
-    php7.1-sybase && \
-  apt install -y \
+    php7.1-sybase \
     git \
-    nodejs \
-    npm \
     ruby \
     packaging-dev \
     dh-make \
