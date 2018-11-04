@@ -3,18 +3,18 @@ FROM ubuntu:bionic
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN \
-  apt-get update && \
-  apt-get install -y language-pack-en-base && \
+  apt update && \
+  apt install -y language-pack-en-base && \
   export LC_ALL=en_US.UTF-8 && \
   export LANG=en_US.UTF-8 && \
-  apt-get install -y software-properties-common curl && \
+  apt install -y software-properties-common curl && \
   curl -sL https://sentry.io/get-cli/ | bash && \
   add-apt-repository ppa:ondrej/php && \
   apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8 && \
 #  echo "deb http://mirror.aarnet.edu.au/pub/MariaDB/repo/10.1/ubuntu xenial main" >> /etc/apt/sources.list.d/mariadb101.list && \
 #  echo "deb-src http://mirror.aarnet.edu.au/pub/MariaDB/repo/10.1/ubuntu xenial main" >> /etc/apt/sources.list.d/mariadb101.list && \
-  apt-get update && \
-  apt-get install -y \
+  apt update && \
+  apt install -y \
     php7.1 \
     php7.1-cli \
     php7.1-dev \
@@ -39,7 +39,8 @@ RUN \
     php7.1-mysql \
     php-imagick \
     php-redis \
-    php7.1-sybase \
+    php7.1-sybase && \
+  apt install -y \
     git \
     nodejs \
     npm \
@@ -47,9 +48,8 @@ RUN \
     packaging-dev \
     dh-make \
     git-buildpackage \
-    reprepro \
     libmariadbclient-dev \
     && \
-  apt-get remove -y software-properties-common && \
-  apt-get autoremove -y && \
+  apt remove -y software-properties-common && \
+  apt autoremove -y && \
   rm -rf /var/lib/apt/lists/*
