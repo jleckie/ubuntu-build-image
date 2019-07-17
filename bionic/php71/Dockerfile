@@ -41,6 +41,7 @@ RUN \
     php-imagick \
     php-redis \
     php7.1-sybase \
+    composer \
     git \
     ruby \
     packaging-dev \
