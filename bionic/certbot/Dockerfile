@@ -10,6 +10,6 @@ RUN \
   apt-get install -y software-properties-common curl && \
   add-apt-repository ppa:certbot/certbot && \
   apt-get update && \
-  apt-get install -y python-certbot python-certbot-dns-route53 openjdk-8-jre-headless && \
+  apt-get install -y certbot python3-certbot-dns-route53 openjdk-8-jre-headless && \
   apt-get autoremove -y && \
   rm -rf /var/lib/apt/lists/*
