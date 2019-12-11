@@ -12,7 +12,7 @@ RUN \
   apt-get install -y openjdk-8-jre-headless && \
   pip3 install \
     certbot \
-    cryptography \
+    cryptography==2.8 \
     certbot-dns-cloudflare \
     certbot-dns-cloudxns \
     certbot-dns-digitalocean \
