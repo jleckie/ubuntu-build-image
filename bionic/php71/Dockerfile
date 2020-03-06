@@ -27,6 +27,7 @@ RUN \
     php7.1-enchant \
     php7.1-gd \
     php7.1-imap \
+    php7.1-ibmdb2 \
     php7.1-json \
     php7.1-ldap \
     php7.1-mbstring \
@@ -38,6 +39,8 @@ RUN \
     php7.1-zip \
     php7.1-mysql \
     php7.1-phpdbg \
+    php7.1-pdosqlsrv \
+    php-xdebug \
     php-imagick \
     php-redis \
     php7.1-sybase \
