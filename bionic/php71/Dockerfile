@@ -26,7 +26,6 @@ RUN \
     php7.1-dba \
     php7.1-enchant \
     php7.1-gd \
-    php7.1-imap \
     php7.1-json \
     php7.1-ldap \
     php7.1-mbstring \
