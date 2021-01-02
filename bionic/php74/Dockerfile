@@ -22,7 +22,7 @@ RUN \
     php7.4-dba \
     php7.4-enchant \ 
     php7.4-gd \
-    php7.5-intl
+    php7.4-intl \
     php7.4-json \
     php7.4-ldap \
     php7.4-mbstring \
@@ -38,7 +38,6 @@ RUN \
     php-imagick \
     php-redis \
     composer \
-    npm \
     git \
     ruby \
     packaging-dev \
